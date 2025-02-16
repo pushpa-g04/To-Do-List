@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(to right, #6d0ee0, #fe7be4);
+}
+.todoapp {
+    width: 100px;
+    max-width:540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    display: flex;
+    align-items: center;
+}
+.box {
+    width: 100%;
+    max-width: 540px;
+    background: linear-gradient(to right,  #fe7be4e4, #6d0ee0);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e4f1bd;
+    border-radius:30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.box2 {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 10px; 
+}
+.btn {
+    color: rgb(237, 243, 243);
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:#f10e92;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    position: relative;  
+}
+
+ul li input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+ul li span {
+    flex-grow: 1; 
+}
+
+ul li .delete-btn {
+    position: absolute;
+    right: 10px;  
+    cursor: pointer;
+    font-size: 18px;
+}
+ul li.checked span:not(.delete-btn){
+    text-decoration: line-through;
+    color: grey;
+}
